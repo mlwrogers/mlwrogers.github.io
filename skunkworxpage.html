@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="floating-wpp.min.js"></script>
-	<script src="https://sp.zalo.me/plugins/sdk.js"></script>
+	<title>8x8 - API Guy Demo Page</title>
+	<meta name="description" content="A simple demo page for 8x8 APIs">
+	<meta name="author" content="Matt Rogers">
 
-<link rel="stylesheet" href="floating-wpp.min.css">
+	<meta property="og:title" content="8x8 - API Guy Demo Page">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://mlwrogers.github.io">
+	<meta property="og:description" content="A simple demo page for 8x8 APIs">
+	<meta property="og:image" content="./images/8x8-logo.png">
 
+	<!-- may need to be .ico file -->
+	<link rel="icon" href="./images/8x8-favicon.png">
+
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="floating-wpp.min.js"></script>
+	<!-- <script src="https://sp.zalo.me/plugins/sdk.js"></script> -->
+	<link rel="stylesheet" href="floating-wpp.min.css">
 
 <style>
 
@@ -104,17 +117,51 @@
 	height:30px;
 }
 
-
-
 </style>
 </head>
 
 <body>
 
+<!-- 8x8 Logo -->
+	<div id="about">
+		<p style="text-align:left;"><img src="./images/8x8-logo.png" alt="NOK" style="width:20%;height:20%;"></p>
+	</div>
+
+<!-- 8x8 SMS API -->
+<!--
+	<div id="container">
+    <div id="sms">
+      <h3 style="font-family:verdana">8x8 SMS API</h3>
+      <small style="font-family:verdana">SEND SMS WITH THE 8X8 SMS API</small>
+      <br>
+      <form>
+        <br>
+        <label style="font-family:verdana" for="senderid"><small>SenderID:</small></label>
+        <select id="senderid" name="senderid">
+          <option value="8x8">8x8-NO-REPLY</option>
+          <option value="+441173255722">8x8-REPLY-VCC-UK</option>
+          <option value="+16785856046">8x8-REPLY-VCC-US</option>
+        </select>
+        <br>
+        <label style="font-family:verdana" for="destination"><small>Destination:</small></label>
+        <input type="text" id="destination" required name="destination" placeholder="+447764836779">
+        <br><br>
+
+        <label class="checkbox"></label>
+        <label style="font-family:verdana" for="body"><small>Text Message:</small></label>
+        <br>
+
+        <textarea id="body" name="body" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <button style="font-family:verdana" class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+-->
+
+<!-- Floating WhatsApp button -->
 <div id="myWa"></div>
-
-
-
 <script type="text/javascript">
   $(function () {
     $('#myWa').floatingWhatsApp({
@@ -126,27 +173,31 @@
   });
 </script>
 
-
-    <div style="text-align: center;">
+<!-- WhatsApp Connect button -->
+<div style="text-align: center;">
 <h2>WhatsApp Connect</h2>
 <button class="button button2" onclick="window.location.href='https://wa.me/6581968289?text=Hi%2C+I+need+support.+Could+you+assist+me%3F'">Contact us</button>
 </div>
 
-     <div style="text-align: center;">
+<!-- WhatsApp Bot button -->
+<div style="text-align: center;">
 <h2>WhatsApp Bot</h2>
 <button class="button button3" onclick="window.location.href='https://wa.me/6562218849?text=Hi%2C+I+need+support.+Could+you+assist+me%3F'">Contact us</button>
 </div>
-	<div style="text-align: center;">
+
+<!-- WhatsApp Support button -->
+<div style="text-align: center;">
 <h2>WhatsApp Support</h2>
 <button class="button button2" onclick="window.location.href='https://wa.me/639216812646?text=Hi%2C+I+need+support.+Could+you+assist+me%3F'">Contact us</button>
 </div>
 
+<!-- Viber Button -->
 <div style="text-align: center;">
 <h2>Viber Support</h2>
 <button class="button button4" onclick="window.location.href='viber://chat?service=19459'">Contact Viber</button>
 </div>
 
-
+<!-- ZALO Section
 	<div style="text-align: center;">
 <h2>WhatsApp QR code</h2>
 <img src="qrcode.svg" alt="QR code" width="300" height="300">
@@ -171,7 +222,7 @@
 <a href="https://wa.me/6581968289?text=Hi%2C+I+need+support.+Could+you+assist+me%3F" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
-
+-->
 
 </body>
 
