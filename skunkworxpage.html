@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>8x8 - API Guy Demo Page</title>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>8x8 - API Guy Demo Page</title>
-	<meta name="description" content="A simple demo page for 8x8 APIs">
+	<meta name="Keywords" content="Demo, 8x8, API, ChatApps, SMS, WhatsApp, Viber">
+	<meta name="Description" content="A simple demo page for 8x8 APIs">
 	<meta name="author" content="Matt Rogers">
 
-	<meta property="og:title" content="8x8 - API Guy Demo Page">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://mlwrogers.github.io">
-	<meta property="og:description" content="A simple demo page for 8x8 APIs">
-	<meta property="og:image" content="./images/8x8-logo.png">
-
-	<!-- may need to be .ico file -->
-	<link rel="icon" href="./images/8x8-favicon.png">
+	<link rel="icon" href="./images/8x8-favicon.png" type="image/png">
 
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="floating-wpp.min.js"></script>
+
 	<!-- <script src="https://sp.zalo.me/plugins/sdk.js"></script> -->
-	<link rel="stylesheet" href="floating-wpp.min.css">
+	<link rel="stylesheet" type="text/css" href="floating-wpp.min.css">
 
 <style>
 
 	body {
-            font-family: Helvetica, sans-serif
-        }
+				font-family: Helvetica, sans-serif
+			 }
 
 .button {
     background-color: #4CAF50; /* Green */
@@ -40,7 +35,6 @@
     margin: 4px 200px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    text-align:center;
     cursor: pointer;
 }
 .button1 {
@@ -123,6 +117,8 @@
 <!-- 8x8 Logo -->
 	<div id="about">
 		<p style="text-align:center;"><img src="./images/8x8-logo.png" alt="NOK" style="width:20%;height:20%;"></p>
+		<h1 style="text-align:center;font-family:verdana">SMS &amp; ChatApps API</h1>
+		<br><br><br>
 	</div>
 
 <!-- 8x8 SMS API -->
@@ -132,7 +128,7 @@
       <h3 style="font-family:verdana">8x8 SMS API</h3>
       <small style="font-family:verdana">Send SMS with the 8X8 SMS API</small>
       <br>
-      <form>
+      <form> NEED TO ADD GET SCRIPT HERE
         <br>
         <label style="font-family:verdana" for="senderid"><small>SenderID:</small></label>
         <select id="senderid" name="senderid">
@@ -171,30 +167,41 @@
   });
 </script>
 
-<!-- WhatsApp Connect button -->
+<!-- WhatsApp Connect button
 <div style="text-align: center;">
 <h2>WhatsApp Connect</h2>
 <button class="button button2" onclick="window.location.href='https://wa.me/6581968289?text=Hi%2C+I+need+support.+Could+you+assist+me%3F'">Contact us</button>
+<br><br><br>
+</div>
+-->
+
+<!-- WhatsApp Bot button
+<div style="text-align: center;">
+	<h2>WhatsApp ChatBot</h2>
+	<button class="button button3" onclick="window.location.href='https://wa.me/6562218849?text=Hi%2C+I+need+support.+Could+you+assist+me%3F'">Contact us</button>
+	<br><br><br>
+</div>
+-->
+
+<!-- WhatsApp into converse -->
+<div style="text-align: center;">
+	<h2>WhatsApp - chat with an agent</h2>
+	<button class="button button2" onclick="window.location.href='https://wa.me/6569507977?text=Hi%2C+I+need+support.+Could+you+assist+me%3F'">Contact us</button>
+	<br><br><br>
 </div>
 
-<!-- WhatsApp Bot button -->
+<!-- Viber into converse -->
 <div style="text-align: center;">
-<h2>WhatsApp Bot</h2>
-<button class="button button3" onclick="window.location.href='https://wa.me/6562218849?text=Hi%2C+I+need+support.+Could+you+assist+me%3F'">Contact us</button>
+	<h2>Viber - chat with an agent</h2>
+	<button class="button button4" onclick="window.location.href='viber://chat?service=19459'">Contact us</button>
+	<br><br><br>
 </div>
 
-<!-- WhatsApp Support button -->
+<!-- WhatsApp into Zendesk integration -->
 <div style="text-align: center;">
-<h2>WhatsApp Support</h2>
-<small>(Converse)</small><br>
-<button class="button button2" onclick="window.location.href='https://wa.me/639216812646?text=Hi%2C+I+need+support.+Could+you+assist+me%3F'">Contact us</button>
-</div>
-
-<!-- Viber Button -->
-<div style="text-align: center;">
-<h2>Viber Support</h2>
-<small>(Converse)</small><br>
-<button class="button button4" onclick="window.location.href='viber://chat?service=19459'">Contact us</button>
+	<h2>WhatsApp - log a support ticket</h2>
+	<button class="button button2" onclick="window.location.href='https://wa.me/639216812646?text=Hi%2C+I+need+support.+Could+you+assist+me%3F'">Contact us</button>
+	<br><br><br>
 </div>
 
 <!-- ZALO Section
